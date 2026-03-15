@@ -1,0 +1,10 @@
+{
+  "uuid": "water-reminder@gilsonf",
+  "name": "Water Reminder",
+  "description": "Sends periodic notifications reminding you to drink water. Configurable start/end time and interval.",
+  "version": 1,
+  "shell-version": ["45", "46", "47", "48", "49"],
+  "url": "https://github.com/gilsonf/water-reminder",
+  "settings-schema": "org.gnome.shell.extensions.water-reminder",
+  "gettext-domain": "water-reminder"
+}

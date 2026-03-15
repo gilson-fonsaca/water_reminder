@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.water-reminder"
+          path="/org/gnome/shell/extensions/water-reminder/">
+
+    <key name="start-time" type="s">
+      <default>'09:00'</default>
+      <summary>Start Time</summary>
+      <description>
+        Time when reminders start being sent (HH:MM in 24-hour format).
+      </description>
+    </key>
+
+    <key name="end-time" type="s">
+      <default>'18:00'</default>
+      <summary>End Time</summary>
+      <description>
+        Time when reminders stop being sent (HH:MM in 24-hour format).
+      </description>
+    </key>
+
+    <key name="interval-minutes" type="i">
+      <default>60</default>
+      <range min="5" max="240"/>
+      <summary>Reminder Interval</summary>
+      <description>
+        How many minutes between each water reminder notification.
+      </description>
+    </key>
+
+  </schema>
+</schemalist>

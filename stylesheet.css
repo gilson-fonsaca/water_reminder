@@ -1,0 +1,9 @@
+/* Water Reminder – Top Bar emoji label */
+.water-reminder-icon {
+    font-size: 16px;
+    padding: 0 4px;
+}
+
+.water-reminder-icon.inactive {
+    opacity: 0.5;
+}
