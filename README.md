@@ -60,7 +60,9 @@ bash uninstall.sh
 
 ## Preferences
 
-Open from the icon menu → **Settings**, or from the terminal:
+Open from the icon menu → **Settings**, or from the terminal. The preferences window has three tabs: **General** (schedule and interval), **Donate**, and **About**.
+
+
 
 ```bash
 gnome-extensions prefs water-reminder@gilsonf
@@ -78,6 +80,12 @@ gnome-extensions prefs water-reminder@gilsonf
 - GJS (included with GNOME)
 - Libadwaita (included with GNOME 42+)
 - `canberra-gtk-play` (for sound alerts — included in most GNOME desktop installations)
+
+## Support
+
+If this extension helps you stay hydrated, consider buying me a coffee:
+
+[![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/Gilsonf)
 
 ## Credits
 
