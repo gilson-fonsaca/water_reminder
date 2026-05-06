@@ -2,6 +2,12 @@
 
 A GNOME Shell extension (45+) that sends periodic notifications reminding you to drink water, with a custom icon in the Top Bar, sound alert, and configurable schedule.
 
+## Support
+
+If this extension helps you stay hydrated, consider buying me a coffee:
+
+[![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/Gilsonf)
+
 ## Features
 
 - **Custom icon** in the Top Bar – quick access to "Remind me now" and Settings.
@@ -81,11 +87,6 @@ gnome-extensions prefs water-reminder@gilsonf
 - Libadwaita (included with GNOME 42+)
 - `canberra-gtk-play` (for sound alerts — included in most GNOME desktop installations)
 
-## Support
-
-If this extension helps you stay hydrated, consider buying me a coffee:
-
-[![Buy Me a Coffee](https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png)](https://www.buymeacoffee.com/Gilsonf)
 
 ## Credits
 
