@@ -52,6 +52,7 @@ export default class WaterReminderExtension extends Extension {
     enable() {
         this._settings = this.getSettings(SCHEMA_ID);
         this._notifSource = null;
+        this._notifSourceDestroyId = null;
         this._timerId = null;
 
         this._indicator = new WaterReminderIndicator(this);
@@ -70,7 +71,13 @@ export default class WaterReminderExtension extends Extension {
             this._settingsChangedId = null;
         }
         this._stopTimer();
-        this._notifSource = null;
+        if (this._notifSource) {
+            if (this._notifSourceDestroyId) {
+                this._notifSource.disconnect(this._notifSourceDestroyId);
+                this._notifSourceDestroyId = null;
+            }
+            this._notifSource = null;
+        }
         if (this._indicator) {
             this._indicator.destroy();
             this._indicator = null;
@@ -136,8 +143,9 @@ export default class WaterReminderExtension extends Extension {
         });
 
         // Clear the cached reference when the tray destroys the source.
-        this._notifSource.connect('destroy', () => {
+        this._notifSourceDestroyId = this._notifSource.connect('destroy', () => {
             this._notifSource = null;
+            this._notifSourceDestroyId = null;
         });
 
         Main.messageTray.add(this._notifSource);
